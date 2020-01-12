@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'VBapp2';
+  title = 'VBapp2020';
+  counter =100;
+
+  constructor() {
+    setInterval( () => {
+      this.counter--;
+    }, 1000);
+  }
+
 }
